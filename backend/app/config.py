@@ -10,7 +10,7 @@ def _resolve_path(value: str | Path, *, project_root: Path, backend_root: Path) 
     if path.is_absolute():
         return path
     project_path = project_root / path
-    if project_path.exists() or str(path).startswith(("docs", ".bob", "frontend")):
+    if project_path.exists() or str(path).startswith(("docs", "frontend")):
         return project_path
     return backend_root / path
 

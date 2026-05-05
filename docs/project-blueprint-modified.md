@@ -214,6 +214,6 @@ DELIVERY_ENABLED
 
 ---
 
-## Bob Guidance
+## Development Guidance
 
-Bob should read project docs first, inspect code before editing, keep changes small, validate after changes, never hardcode secrets, report exact blockers, keep architecture clean, and never reintroduce external workflow automation unless the user explicitly asks.
+Development agents should read project docs first, inspect code before editing, keep changes small, validate after changes, never hardcode secrets, report exact blockers, keep architecture clean, and never reintroduce external workflow automation unless the client explicitly asks.

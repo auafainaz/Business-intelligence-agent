@@ -176,7 +176,7 @@ Stabilize the system for repeatable demos and early testing.
 
 ---
 
-## Bob Development Rules
+## Development Agent Rules
 
 - Always identify active phase first.
 - Keep changes phase-scoped.

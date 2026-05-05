@@ -1,7 +1,7 @@
 ﻿# AGENTS.md
 ## Project: ClientIQ
 ### Premium Inbound Call Intelligence Platform
-### Current Operating Instructions for IBM Bob
+### Current Operating Instructions for Development Agents
 
 ---
 
@@ -236,9 +236,9 @@ Do not log secrets.
 
 ---
 
-## 9. Bob Execution Rules
+## 9. Development Agent Execution Rules
 
-When Bob works on this repo:
+When a development agent works on this repo:
 
 1. Identify active phase.
 2. Read the matching phase plan.
