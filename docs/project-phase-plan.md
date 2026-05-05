@@ -13,6 +13,13 @@ Architecture diagram:
 - `docs/langgraph-architecture.md`
 - `docs/langgraph-architecture.svg`
 
+Detailed phase documents:
+
+- `docs/phases/phase-1-frontend.md`
+- `docs/phases/phase-2-realtime-voice-agent.md`
+- `docs/phases/phase-3-integrated-product-flow.md`
+- `docs/phases/phase-4-demo-readiness.md`
+
 ```text
 Public Website
 -> Twilio inbound call

@@ -31,6 +31,7 @@ Public Website
 - `AGENTS.md` - development and architecture instructions
 - `docs/project-blueprint-modified.md` - product blueprint
 - `docs/project-phase-plan.md` - phased implementation plan
+- `docs/phases/` - detailed phase-by-phase implementation documents
 - `docs/langgraph-architecture.md` - architecture graph and Mermaid diagram
 - `backend/README.md` - backend setup and run instructions
 - `frontend/README.md` - frontend setup and run instructions
