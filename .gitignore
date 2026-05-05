@@ -1,0 +1,33 @@
+# Environment and secrets
+.env
+*.env
+!.env.example
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Backend local runtime data
+backend/data/
+backend/outputs/
+backend/uvicorn.out.log
+backend/uvicorn.err.log
+ngrok.out.log
+ngrok.err.log
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*
+!frontend/.env.example
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

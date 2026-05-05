@@ -1,0 +1,142 @@
+{
+  "type": "function",
+  "name": "save_dashboard_data",
+  "description": "Save the structured data from the discovery call for both client dashboard and internal records",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "client": {
+        "type": "object",
+        "properties": {
+          "full_name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "Owner",
+              "Decision Maker",
+              "Manager",
+              "Other"
+            ]
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "website": {
+            "type": "string"
+          },
+          "business_name": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "years_in_business": {
+            "type": "integer"
+          },
+          "number_of_locations": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "full_name",
+          "email",
+          "website",
+          "business_name"
+        ]
+      },
+      "conversation_summary": {
+        "type": "string",
+        "description": "2-4 sentence warm, personalized summary of the conversation. Include specific things the owner shared and make it feel human and reflective."
+      },
+      "key_pain_points": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "key_goals": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "ai_familiarity": {
+        "type": "string",
+        "description": "What the owner said about their familiarity with AI tools and what they have used them for."
+      },
+      "current_systems": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Systems and tools they currently use."
+      },
+      "dashboard_data": {
+        "type": "object",
+        "description": "Public-facing dashboard content",
+        "properties": {
+          "google_rank": {
+            "type": "string"
+          },
+          "google_rating": {
+            "type": "string"
+          },
+          "review_count": {
+            "type": "string"
+          },
+          "ai_search_status": {
+            "type": "string"
+          },
+          "website_traffic_estimate": {
+            "type": "string"
+          },
+          "ai_website_agent": {
+            "type": "string"
+          },
+          "load_speed": {
+            "type": "string"
+          },
+          "social_footprint": {
+            "type": "object"
+          },
+          "main_opportunities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "personal_touch": {
+        "type": "string",
+        "description": "One warm, specific personal note from the conversation that makes the report feel human."
+      },
+      "full_transcript": {
+        "type": "string",
+        "description": "Full call transcript or a link to it."
+      },
+      "timestamp": {
+        "type": "string"
+      },
+      "lead_source": {
+        "type": "string",
+        "enum": [
+          "inbound_call",
+          "outbound",
+          "website_chat"
+        ]
+      }
+    },
+    "required": [
+      "client",
+      "conversation_summary",
+      "dashboard_data",
+      "personal_touch"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+customModes:
+  - slug: voice-agent-architect
+    name: "Voice Agent Architect"
+    whenToUse: >-
+      Use for planning call flow and field capture before implementation.
+    roleDefinition: >-
+      You design simple inbound voice agent flows for the current MVP.
+    groups:
+      - read
+      - edit
+      - command
+
+  - slug: integration-builder
+    name: "Integration Builder"
+    whenToUse: >-
+      Use for implementing webhooks, adapters, APIs, and storage.
+    roleDefinition: >-
+      You build small, testable integrations and keep provider logic isolated.
+    groups:
+      - read
+      - edit
+      - command
